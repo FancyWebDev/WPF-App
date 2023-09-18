@@ -30,6 +30,7 @@ public static class AutofacConfig
         builder.Populate(services);
         builder.RegisterType<AccountService>().SingleInstance();
         builder.RegisterType<AppConfig>().SingleInstance();
+        builder.RegisterType<NavigationService>().SingleInstance();
             
         return builder.Build();
     }

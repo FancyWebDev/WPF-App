@@ -7,25 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="600">
     <Grid Background="#dadada">
-        <Border MinWidth="400" Margin="15" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="500" CornerRadius="20">
-            <Border.Effect>
-                <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0" />
-            </Border.Effect>
-            <StackPanel>
-                <Grid Margin="0 0 0 20">
-                    <TextBlock Text="Registration" FontSize="30" FontWeight="Bold"/>
-                    <Button Content="Sign In" HorizontalAlignment="Right" Style="{StaticResource MaterialDesignFlatButton}" />
-                </Grid>
-                <TextBox x:Name="LoginBox" materialDesign:HintAssist.Hint="login" Margin="0 0 0 20"
-                         Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
-                <PasswordBox x:Name="PasswordBox" materialDesign:HintAssist.Hint="password" Margin="0 0 0 20"
-                             Style="{StaticResource MaterialDesignPasswordBox}" />
-                <PasswordBox x:Name="ConfirmPasswordBox" materialDesign:HintAssist.Hint="confirm password" Margin="0 0 0 20"
-                             Style="{StaticResource MaterialDesignPasswordBox}" />
-                <TextBox x:Name="EmailBox" materialDesign:HintAssist.Hint="email" Margin="0 0 0 30"
-                         Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
-                <Button Content="Register" Click="RegisterButtonClicked"/>
-            </StackPanel>
-        </Border>
+        <Frame x:Name="MainFrame" />
     </Grid>
 </Window>

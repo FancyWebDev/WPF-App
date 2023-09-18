@@ -2,12 +2,10 @@
 
 namespace WpfApplication.Dtos;
 
-public record RegisterDto
+public class LoginDto
 {
     [JsonProperty("login")]
     public string Login { get; set; }
     [JsonProperty("password_hash")]
     public string PasswordHash { get; set; }
-    [JsonProperty("email")]
-    public string Email { get; set; }
 }
